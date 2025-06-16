@@ -1,17 +1,13 @@
-const mongoose = require("mongoose");
+const { createClient } = require("@supabase/supabase-js");
 const express = require("express");
 const PORT = process.env.PORT || 3001;
 const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
-const mongodbConnectionString = process.env.MONGODB_URI;
-
-// connecting to mongodb server
-main().catch((err) => console.log(err));
-async function main() {
-  await mongoose.connect(mongodbConnectionString);
-}
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 app.use(
   express.urlencoded({
@@ -24,29 +20,19 @@ app.use(express.json());
 
 app.use(cors());
 
-const formDataSchema = new mongoose.Schema({
-  category: String,
-  car: String,
-  pickupLoc: String,
-  dropoffLoc: String,
-  dateOfPickup: String,
-  dateOfDropoff: String,
-});
-
-const carsSchema = new mongoose.Schema({});
-
-const FormDataModel = mongoose.model("vehicle", formDataSchema);
-const carsModel = mongoose.model("car", carsSchema);
-
 app.get("/server", async (req, res) => {
   try {
-    const vehicles = await FormDataModel.find();
-    const cars = await carsModel.find();
-    const data = {
-      vehicles,
-      cars,
-    };
-    res.json(data);
+    const { data: vehicles, error: vehicleError } = await supabase
+      .from("vehicle")
+      .select("*");
+    const { data: cars, error: carError } = await supabase.from("car").select("*");
+
+    if (vehicleError || carError) {
+      console.log(vehicleError || carError);
+      return res.status(500).send("Error getting form data!");
+    }
+
+    res.json({ vehicles, cars });
   } catch (err) {
     console.log(err);
     res.status(500).send("Error getting form data!");
@@ -55,9 +41,13 @@ app.get("/server", async (req, res) => {
 
 app.post("/server", async (req, res) => {
   try {
-    const formData = new FormDataModel(req.body);
-    await formData.save();
+    const { error } = await supabase.from("vehicle").insert([req.body]);
+    if (error) {
+      console.log(error);
+      return res.status(500).send("Error saving form data!");
+    }
     console.log("Form data saved successfully!");
+    res.status(201).send("Saved");
   } catch (error) {
     console.log(error);
     res.status(500).send("Error saving form data!");

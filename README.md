@@ -24,7 +24,7 @@ I built the app to make these two things **easy, effortless, and seamless:**
   
 ##  USED TECHNOLOGIES
 - Front-end: **React.js, Material-UI, Bootstrap, JavaScript**
-- Back-end: **Node.js, Express.js, MongoDB, Mongoose, Axios**
+- Back-end: **Node.js, Express.js, Supabase, Axios**
 
 ##  SCREENSHOTS OF THE PROJECT 📸
 ![image](https://github.com/dagmfre/Nova-Cars-An-Ecommerce-Website/assets/96683816/1a388317-571d-492d-bd0a-64ec32656ed1)
