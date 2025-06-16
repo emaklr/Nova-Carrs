@@ -13,6 +13,16 @@ I built the app to make these two things **easy, effortless, and seamless:**
 ##  QUICK START
 👉 Live Demo🔗: [Nova-Cars Website](https://nova-cars.onrender.com)
 
+### Running Locally
+
+```bash
+# start the Express API
+cd Server && npm install && node index.js
+
+# in another terminal start the Next.js app
+cd ../NextApp && npm install && npm run dev
+```
+
 ##  FEATURES
 - **Navigation and exploration** of a wide **variety of cars**, including SUVs, trucks, and vans.
 - **Advanced searching** for reserving and booking cars.
@@ -23,8 +33,11 @@ I built the app to make these two things **easy, effortless, and seamless:**
 - Providing a way to **navigate** users to **get/download** the **mobile application.**
   
 ##  USED TECHNOLOGIES
+ codex/refactor-server-for-supabase-integration
 - Front-end: **React.js, Material-UI, Bootstrap, JavaScript**
 - Back-end: **Node.js, Express.js, Supabase, Axios**
+- Front-end: **Next.js (React), Material-UI, Bootstrap, JavaScript**
+- Back-end: **Node.js, Express.js, MongoDB, Mongoose, Axios**
 
 ##  SCREENSHOTS OF THE PROJECT 📸
 ![image](https://github.com/dagmfre/Nova-Cars-An-Ecommerce-Website/assets/96683816/1a388317-571d-492d-bd0a-64ec32656ed1)
