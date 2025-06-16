@@ -33,6 +33,9 @@ cd ../NextApp && npm install && npm run dev
 - Providing a way to **navigate** users to **get/download** the **mobile application.**
   
 ##  USED TECHNOLOGIES
+ codex/refactor-server-for-supabase-integration
+- Front-end: **React.js, Material-UI, Bootstrap, JavaScript**
+- Back-end: **Node.js, Express.js, Supabase, Axios**
 - Front-end: **Next.js (React), Material-UI, Bootstrap, JavaScript**
 - Back-end: **Node.js, Express.js, MongoDB, Mongoose, Axios**
 
