@@ -51,7 +51,7 @@ const Contact = () => {
           </div>
           <div className="info-cont">
             <i class="fa-regular fa-envelope"></i>
-            <p>Nova@gmail.com</p>
+            <p>ritwheel@gmail.com</p>
           </div>
           <div className="info-cont">
             <i class="fa-solid fa-location-dot"></i>

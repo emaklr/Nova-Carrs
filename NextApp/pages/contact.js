@@ -6,7 +6,7 @@ export default function Contact() {
       <Header />
       <main>
         <h1>Contact Us</h1>
-        <p>Email us at info@nova.com</p>
+        <p>Email us at info@ritwheel.com</p>
       </main>
     </>
   );

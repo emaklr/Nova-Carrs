@@ -81,7 +81,7 @@ const Products = () => {
           <div className="cars1-topic">
             <h1>FEATURED CARS</h1>
             <img src="hr.svg" alt="" />
-            <p>“Nova's Special Picks for Seamless City Driving.”</p>
+            <p>“ritwheel's Special Picks for Seamless City Driving.”</p>
           </div>
           <div className="cars1-main">
             <div className="cars1-main-child">
@@ -172,7 +172,7 @@ const Products = () => {
             <h1>PRODUCTS</h1>
             <img src="hr.svg" alt="" />
             <p>
-              “Nova Cars: Builted for those who demand excellence, performance,
+              “ritwheel Cars: Builted for those who demand excellence, performance,
               and a touch of luxury on the road.”
             </p>
           </div>

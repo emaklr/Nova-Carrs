@@ -36,7 +36,7 @@ export default function BasicAccordion() {
         <p>
           Frequently Asked Questions about our premier car sales platform.
           Discover key information from most common questions asked and enhance
-          your experience with Nova."
+          your experience with ritwheel."
         </p>
       </div>
 
@@ -191,7 +191,7 @@ export default function BasicAccordion() {
           </AccordionSummary>
           <AccordionDetails>
             <p>
-              You can reach our customer support team via support@nova.com,
+              You can reach our customer support team via support@ritwheel.com,
               +1-555-123-4567, or through the contact form on our website. We
               are here to assist you with any questions or concerns.
             </p>

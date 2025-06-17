@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <h1>Welcome to Nova Cars</h1>
+        <h1>Welcome to ritwheel Cars</h1>
         <p>Explore our selection of vehicles.</p>
       </main>
     </>

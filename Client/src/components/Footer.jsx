@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-childs">
-        <h1>Nova Cars</h1>
+        <h1>ritwheel Cars</h1>
         <p>
           We offers a big range of vehicles for all your driving needs. We have
           the perfect car to meet your needs.
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         <div className="info-cont">
           <i class="fa-regular fa-envelope"></i>
-          <p>Nova@gmail.com</p>
+          <p>ritwheel@gmail.com</p>
         </div>
 
         <div className="social-cont">
@@ -87,7 +87,7 @@ const Footer = () => {
           <p>Subscribed succesfully!</p>
         </div>
       </div>
-      <p className="copy">©2023, Nova. All rights reserved.</p>
+      <p className="copy">©2023, ritwheel. All rights reserved.</p>
     </div>
   );
 };
