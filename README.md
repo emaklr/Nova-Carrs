@@ -15,11 +15,14 @@ I built the app to make these two things **easy, effortless, and seamless:**
 
 ### Running Locally
 
+1. Copy `.env.example` to `.env` and fill in the values for `SUPABASE_URL`,
+   `SUPABASE_KEY` and `PORT`.
+
 ```bash
 # start the Express API
 cd Server && npm install && node index.js
 
-# in another terminal start the Next.js app
+# in another terminal start the Next.js app using the `/app` router
 cd ../NextApp && npm install && npm run dev
 ```
 
@@ -33,8 +36,6 @@ cd ../NextApp && npm install && npm run dev
 - Providing a way to **navigate** users to **get/download** the **mobile application.**
   
 ##  USED TECHNOLOGIES
- codex/refactor-server-for-supabase-integration
-- Front-end: **React.js, Material-UI, Bootstrap, JavaScript**
 - Back-end: **Node.js, Express.js, Supabase, Axios**
 - Front-end: **Next.js (React), Material-UI, Bootstrap, JavaScript**
 - Back-end: **Node.js, Express.js, MongoDB, Mongoose, Axios**
