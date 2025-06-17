@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import Button from "@mui/material/Button";
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-sm fixed-top">
       <div className="container-fluid nav-cont">
         <div className="nav-child1">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand" href="/">
             <img className="logo logo1" src="nova.svg" alt="" />
             <img className="logo logo2" src="tire.svg" alt="" />
           </Link>
@@ -32,17 +32,17 @@ const Header = () => {
           <div className="navbar-collapse collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active" to="/#">
+                <Link className="nav-link active" href="/#">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/vehicles">
+                <Link className="nav-link" href="/vehicles">
                   Vehicles
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
+                <Link className="nav-link" href="/about">
                   About
                 </Link>
               </li>
@@ -52,7 +52,7 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
+                <Link className="nav-link" href="/contact">
                   Contact
                 </Link>
               </li>
@@ -73,19 +73,19 @@ const Header = () => {
           <div id="nav" className={isNavOpen ? "show" : ""}>
             <ul className="ul">
               <li className="li li1">
-                <Link to="/">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li className="li li2">
-                <Link to="/vehicles">Vehicles</Link>
+                <Link href="/vehicles">Vehicles</Link>
               </li>
               <li className="li li3">
-                <Link to="/about">About</Link>
+                <Link href="/about">About</Link>
               </li>
               <li className="li li4">
                 <a href="#testimonials">Testimonials</a>
               </li>
               <li className="li li5">
-                <Link to="/contact">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
               <li className="li">
                 <button className="sign">Sign up &gt;</button>
