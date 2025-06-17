@@ -31,7 +31,7 @@ const Vehicles = () => {
               </p>
               <ul>
                 <li>
-                  <b>Electric Propulsion:</b> Nova cars feature advanced
+                  <b>Electric Propulsion:</b> RiteWheel feature advanced
                   electric propulsion for eco-friendly, high-performance
                   driving.
                 </li>

@@ -25,7 +25,7 @@ const About = () => {
         <div className="abt-descrp">
           <h1>You start the engine and your adventure begins</h1>
           <p>
-            Nova cars redefine the driving experience with advanced electric
+            RiteWheel redefine the driving experience with advanced electric
             propulsion, ensuring eco-friendly performance. Their sleek,
             aerodynamic design not only enhances fuel efficiency but also
             captivates with a modern aesthetic. The future unfolds with Nova's
