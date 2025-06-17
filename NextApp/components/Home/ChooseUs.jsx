@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const ChooseUs = () => {
   return (
@@ -15,7 +15,7 @@ const ChooseUs = () => {
             and additional benefits, our commitment to providing exceptional
             value sets us apart in the world of online car sales.
           </p>
-          <Link to="/about">Learn More</Link>
+          <Link href="/about">Learn More</Link>
         </div>
         <div className="choose-cont2">
           <div className="choose-list-cont1">
