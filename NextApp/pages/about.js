@@ -5,7 +5,7 @@ export default function About() {
     <>
       <Header />
       <main>
-        <h1>About Nova Cars</h1>
+        <h1>About RiteWheel</h1>
         <p>Information about the company.</p>
       </main>
     </>

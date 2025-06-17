@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <nav className="navbar">
       <div className="container">
-        <Link className="logo" href="/">Nova Cars</Link>
+        <Link className="logo" href="/">RiteWheel</Link>
         <button onClick={() => setOpen(!open)}>Menu</button>
         <ul style={{ display: open ? 'block' : 'none' }}>
           <li><Link href="/">Home</Link></li>
