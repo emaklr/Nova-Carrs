@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 const FrontPage = () => {
   return (
     <div className="front">
@@ -12,7 +12,7 @@ const FrontPage = () => {
           <a href="#booking">Order now</a>{" "}
         </button>
         <button className="view">
-          <Link to="/vehicles">View Cars</Link>
+          <Link href="/vehicles">View Cars</Link>
         </button>
       </div>
       <div className="front-child2">
