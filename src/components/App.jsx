@@ -3,7 +3,7 @@ import Vehicles from "./Vehicles";
 import About from "./About";
 import Contact from "./Contact";
 import { MyProvider } from "../context/MyContext";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import { StyledEngineProvider } from "@mui/material/styles";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -24,6 +24,7 @@ function App() {
           <Route path="/vehicles" element={<Vehicles />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </MyProvider>
     </StyledEngineProvider>
