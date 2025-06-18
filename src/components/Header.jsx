@@ -32,7 +32,7 @@ const Header = () => {
           <div className="navbar-collapse collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link active" to="/#">
+                <Link className="nav-link active" to="/">
                   Home
                 </Link>
               </li>
